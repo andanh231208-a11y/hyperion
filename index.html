@@ -8,7 +8,8 @@
     <title>Tiệm nhà Hy</title>
 
     <meta name="description" content="Trang tổng hợp các AI Character của Hyperion.">
-    <meta name="theme-color" content="#071424">
+    <meta name="theme-color" content="#fff7dc">
+    <meta name="color-scheme" content="light">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,8 +36,14 @@
     --shadow:rgba(0,0,0,.08);
     --transition-speed:.18s;
 }
+        
+         html{
+    color-scheme: light;
+}
 
 body {
+    color-scheme: light;
+    background:#fffdf7;
     font-family: "Be Vietnam Pro", sans-serif;
     color: var(--text-color);
     min-height: 100vh;
@@ -585,65 +592,101 @@ body {
 /* =======================
    NEWS POPUP - MOBILE
 ======================= */
-        
 @media (max-width:768px){
 
     #newsOverlay{
         padding:12px;
+        align-items:center;
     }
 
     #newsPanel{
-        width:95vw;
-        max-width:700px;
-        max-height:80vh;
+        width:100%;
+        max-width:430px;
+        max-height:82vh;
+        border-radius:16px;
+        box-shadow:
+            5px 5px 0 #ecd78b,
+            0 12px 30px rgba(0,0,0,.16);
+    }
+
+    #newsPanel h2{
+        padding:16px 18px;
+        font-size:20px;
+        line-height:1.35;
     }
 
     #newsList{
         padding:14px;
+        gap:14px;
     }
 
     .news-card{
+
         display:grid;
-        grid-template-columns:70px 1fr 95px;
+        grid-template-columns:68px 1fr;
         gap:12px;
-        align-items:center;
-        padding:12px;
+
+        padding:14px;
+        border-radius:12px;
+
+        align-items:start;
     }
 
     .news-card img{
-        width:70px;
+
+        width:68px;
         padding:3px;
+        border-radius:8px;
+
     }
 
     .news-info h3{
+
         font-size:16px;
-        margin-bottom:4px;
+        margin-bottom:5px;
+        line-height:1.35;
+
     }
 
     .news-info p{
+
         font-size:12px;
-        line-height:1.5;
+        line-height:1.55;
         margin-bottom:8px;
+
     }
 
     .news-tags{
+
         gap:5px;
+
     }
 
     .news-tags span{
+
         font-size:10px;
         padding:4px 8px;
+
     }
-    
+
     .news-btn{
-        width:90px;
-        min-width:90px;
-        height:38px;
-        font-size:12px;
-        margin:0;
-        justify-self:end;
-        align-self:center;
-        grid-column:auto;
+        grid-column:1 / -1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        width:100%;
+        height:40px;
+
+        margin-top:10px;
+
+        font-size:13px;
+        border-radius:9px;
+    }
+
+    .news-close-tip{
+        bottom:10px;
+        font-size:11px;
     }
 }
 
@@ -876,22 +919,58 @@ user-select:none;
 }
 
 /* Điện thoại */
-@media(max-width:640px){
-    .music-player{
-        width:55px;
-        height:55px;
-        right:16px;
-        bottom:18px;
-    }
-}
+@media (max-width:768px){
 
-.pixel-decor{
-    position:absolute;
-    width:42px;
-    image-rendering:pixelated;
-    pointer-events:none;
-    opacity:.9;
-}  
+    .character-card{
+
+        grid-template-columns:1fr;
+        gap:18px;
+
+        padding:18px;
+
+    }
+
+    .left h2{
+
+        font-size:26px;
+
+    }
+
+    .tagline{
+
+        font-size:14px;
+
+    }
+
+    .right{
+
+        order:-1;
+        padding:0;
+
+    }
+
+    .right img{
+
+        max-width:210px;
+
+    }
+
+    .button-group{
+
+        gap:10px;
+
+    }
+
+    .chat-btn{
+
+        height:46px;
+        min-width:0;
+        font-size:14px;
+
+    }
+
+}
+        
 </style>
 
 </head>
