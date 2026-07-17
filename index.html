@@ -582,12 +582,60 @@ body {
 
 /* Scroll */
 #newsList::-webkit-scrollbar{
-      width:8px;
+    width:8px;
 }
 
 #newsList::-webkit-scrollbar-thumb{
     background:#2d8cff;
     border-radius:999px;
+}
+
+/* =======================
+   NEWS POPUP - DESKTOP
+======================= */
+
+#newsPanel{
+    width:min(760px,92vw);
+    max-width:760px;
+    max-height:80vh;
+}
+
+#newsList{
+    padding:18px;
+    gap:16px;
+}
+
+.news-card{
+    display:grid;
+    grid-template-columns:90px 1fr auto;
+    gap:18px;
+    align-items:center;
+    padding:16px;
+}
+
+.news-card img{
+    width:90px;
+}
+
+.news-info h3{
+    font-size:20px;
+}
+
+.news-info p{
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.news-tags span{
+    font-size:12px;
+    padding:5px 12px;
+}
+
+.news-btn{
+    width:120px;
+    height:38px;
+    font-size:13px;
+    border-radius:10px;
 }
 
 /* =======================
